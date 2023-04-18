@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+set -euox pipefail
+
 FILENAME=$(basename $0)
 DIRNAME=$(readlink -f $(dirname $0))
 ANSIBLE_VERSION='ansible-core==2.12'
