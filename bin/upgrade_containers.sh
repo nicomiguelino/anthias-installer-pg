@@ -1,5 +1,5 @@
 #!/bin/bash -e
 
-FILENAME=$(basename $0)
-
-echo "[$FILENAME] Hello, Mars!"
+sudo -E docker compose build
+sudo -E docker image prune -f
+sudo -E docker compose up -d
