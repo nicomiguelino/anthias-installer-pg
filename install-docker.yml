@@ -1,4 +1,5 @@
 - hosts: 127.0.0.1
+  become: true
   tasks:
     - name: Make sure distro package of Docker is absent
       ansible.builtin.apt:
