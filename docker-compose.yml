@@ -1,0 +1,8 @@
+version: "2"
+services:
+  main:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.main
+    command: bash
+    tty: true

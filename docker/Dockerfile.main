@@ -1,0 +1,11 @@
+# @TODO: Choose only one of the following two lines.
+#   Uncomment the other line.
+# FROM balenalib/raspberrypi3-debian:buster
+FROM debian:buster
+
+RUN apt-get update -y && \
+    apt-get install -y --no-install-recommends \
+    python3 \
+    python3-pip
+
+WORKDIR /usr/src/app
