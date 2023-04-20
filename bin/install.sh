@@ -24,4 +24,5 @@ cd /home/${USER}/playground
 
 sudo -E -u ${USER} ansible-playbook install-docker.yml
 
-/home/$USER/playground/bin/upgrade_containers.sh
+# TODO: Uncomment when ready.
+# /home/$USER/playground/bin/upgrade_containers.sh
